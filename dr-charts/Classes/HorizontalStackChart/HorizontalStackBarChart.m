@@ -60,6 +60,7 @@
 - (void)getDataFromDataSource{
     self.dataArray = [[NSMutableArray alloc] init];
     self.legendArray = [[NSMutableArray alloc] init];
+    totalCount = 0;
     
     for (int i=0; i<[self.dataSource numberOfValuesForStackChart]; i++) {
         HorizontalStackBarData *chartData = [[HorizontalStackBarData alloc] init];
